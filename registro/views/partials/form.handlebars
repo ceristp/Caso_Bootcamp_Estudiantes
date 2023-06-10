@@ -1,0 +1,29 @@
+<form action="/" method="POST" class="row g-3">
+   <div class="region-select col-12 col-lg-4">
+      <label for="region" class="form-label">Región</label>
+      <select name="regionName" id="region" class="form-select" aria-label="Region" required>
+         <option value="" selected disabled>Elija una región</option>
+         <option value="all">Todas las regiones</option>
+         {{#each regions}}
+            <option value="{{nombre}}">{{nombre}}</option>
+         {{/each}}
+      </select>
+   </div>
+   <div class="course-select col-12 col-lg-2">
+      <label for="course" class="form-label">Curso</label>
+      <select name="courseCode" id="course" class="form-select" aria-label="Curso" required>
+         <option value="" selected disabled>Elija un curso</option>
+         <option value="all">Todos los cursos</option>
+         {{#each courses}}
+            <option value="{{codigo_curso}}">{{codigo_curso}}</option>
+         {{/each}}
+      </select>
+   </div>
+   <div class="col-12 col-lg-3">
+      <div class="d-grid gap-2 h-100">
+         <button id="filter" class="btn btn-primary fs-3 fw-bold d-inline align-items-center justify-content-center">
+            <span>Filtrar</span>
+         </button>
+      </div>
+   </div>
+</form>

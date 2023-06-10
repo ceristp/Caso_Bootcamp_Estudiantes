@@ -1,0 +1,21 @@
+{
+  "name": "examen_bootcamp_estudiantes_curso",
+  "version": "1.0.0",
+  "description": "examen de certificacion - talento digital",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js --open",
+    "start": "node index.js --open"
+  },
+  "author": "Ceristp",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.0.1",
+    "express": "4.18.1",
+    "express-handlebars": "6.0.6",
+    "pg": "8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.19"
+  }
+}
